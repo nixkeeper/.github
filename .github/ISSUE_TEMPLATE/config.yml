@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Questions, ideas and feedback
+    url: https://github.com/nixkeeper/nixkeeper/discussions
+    about: How to use nixkeeper, what you'd like it to do, how you use it.
+  - name: Is something late or down?
+    url: https://status.nixkeeper.com/
+    about: Whether every sync, digest and test is on time, and what's being looked at.
+  - name: Report a security problem
+    url: https://github.com/nixkeeper/.github/blob/main/SECURITY.md
+    about: Privately, through the repository's Security tab; not in a public issue.

@@ -1,0 +1,22 @@
+name: Something looks wrong
+description: Its data, its output or its runs aren't what they should be.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For the dashboard's page (a package's version, status or badge), [nixkeeper's issues](https://github.com/nixkeeper/nixkeeper/issues/new/choose) are the place. Whether a run is just late: [status.nixkeeper.com](https://status.nixkeeper.com/).
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What's wrong
+      description: What you saw, and where (a file of the data branch, a run, a tool's answer). Links help.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What it should be
+      description: And how you know, e.g. a link to the source the data comes from.
+    validations:
+      required: true
