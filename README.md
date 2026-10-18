@@ -21,5 +21,15 @@ the defaults its repositories use.
     security policy.
   - [`.github/pull_request_template.md`](.github/pull_request_template.md):
     the checklist.
+- [`rulesets/`](rulesets/): the rulesets every repository has, as JSON to
+  import (a repository's Settings → Rules → Rulesets → New ruleset → Import
+  a ruleset); GitHub only enforces organisation rulesets on its paid plans.
+  - [`main.json`](rulesets/main.json), in every repository but this one:
+    `main` changes only through a pull request, squash-merged once
+    `tests-and-lint` (GitHub Actions) passes; no force pushes, no deleting
+    it.
+  - [`release-tags.json`](rulesets/release-tags.json), in the repositories
+    with releases (nixkeeper, nixkeeper-mcp): a `v*` tag can't be moved or
+    deleted once pushed.
 
 MIT, like the rest of nixkeeper.
