@@ -29,6 +29,11 @@ the defaults its repositories use.
     `tests-and-lint` (GitHub Actions) passes on it as it is with today's
     `main`, and its review threads are resolved; no force pushes, no
     deleting it. The same as nixkeeper's (exported from it).
+  - [`data.json`](rulesets/data.json), in the repositories that publish a
+    `data` branch (nixkeeper, the digests, status): it can't be deleted,
+    as it holds what the runs carry over (a build's last success, the
+    attempts read so far). Their runs replace it with force pushes, which
+    this allows.
   - [`release-tags.json`](rulesets/release-tags.json), in the repositories
     with releases (nixkeeper, nixkeeper-mcp): a `v*` tag can't be moved or
     deleted once pushed.
