@@ -26,8 +26,9 @@ the defaults its repositories use.
   a ruleset); GitHub only enforces organisation rulesets on its paid plans.
   - [`main.json`](rulesets/main.json), in every repository but this one:
     `main` changes only through a pull request, squash-merged once
-    `tests-and-lint` (GitHub Actions) passes; no force pushes, no deleting
-    it.
+    `tests-and-lint` (GitHub Actions) passes on it as it is with today's
+    `main`, and its review threads are resolved; no force pushes, no
+    deleting it. The same as nixkeeper's (exported from it).
   - [`release-tags.json`](rulesets/release-tags.json), in the repositories
     with releases (nixkeeper, nixkeeper-mcp): a `v*` tag can't be moved or
     deleted once pushed.
