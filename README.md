@@ -14,6 +14,8 @@ the defaults its repositories use.
   - [`CONTRIBUTING.md`](CONTRIBUTING.md): issues, pull requests, commit
     messages, AI assistance.
   - [`SUPPORT.md`](SUPPORT.md): where to ask.
+  - [`ACCESSIBILITY.md`](ACCESSIBILITY.md): what the pages do for
+    accessibility, what falls short, and how to report a barrier.
   - [`.github/ISSUE_TEMPLATE/`](.github/ISSUE_TEMPLATE/): the "Something
     looks wrong" form and links to Discussions, the status page and the
     security policy.
