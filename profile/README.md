@@ -10,7 +10,7 @@ failures, and vulnerabilities, in one place.
 
 ## Repositories
 
-| | |
+| Repository | What it is |
 |---|---|
 | [**nixkeeper**](https://github.com/nixkeeper/nixkeeper) | The dashboard: joins the digests into one page, every 3 hours. Fork it for a dashboard of your own lists |
 | [**nixkeeper-mcp**](https://github.com/nixkeeper/nixkeeper-mcp) | MCP server, so an AI assistant can answer questions about nixpkgs packages from nixkeeper's data |
@@ -19,7 +19,7 @@ failures, and vulnerabilities, in one place.
 The digests: each reads one public source for all of nixpkgs and publishes
 what it finds, for nixkeeper and anyone else.
 
-| | Reads | Every |
+| Digest | Reads | Every |
 |---|---|---|
 | [**digest-builds**](https://github.com/nixkeeper/digest-builds) | Hydra's latest evaluation of nixpkgs master (and staging-next, haskell-updates) | hour |
 | [**digest-versions**](https://github.com/nixkeeper/digest-versions) | Repology, GitHub releases and per-ecosystem indexes (CRAN, Emacs, Stackage, Typst) | 12 hours |
